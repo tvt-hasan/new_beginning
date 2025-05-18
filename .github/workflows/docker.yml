@@ -40,7 +40,7 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKER_USER }}/php-app:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/php-app:${{ github.sha }}
+            ${{ secrets.DOCKER_USER }}/php-app:${{ github.sha }}
           secrets: |
             username=${{ secrets.DOCKER_USER }}
             password=${{ secrets.DOCKER_TOKEN }}
